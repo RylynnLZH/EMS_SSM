@@ -110,7 +110,7 @@ height: 750px;
 		//增加按钮
 		$("#add").click(function() {
 			var name=$("#boxname").val();
-			window.location.href = "department?type=add&name="+name;
+			window.location.href = "addDepartment.do?name="+name;
 		})
 
 		//鼠标点击  增加class
@@ -132,7 +132,7 @@ height: 750px;
 			if (length > 0) {
 				var con = confirm("确认删除？");
 						if (con) {
-							window.location.href = "updateDepartment.do?ids="+ ids;
+							window.location.href = "delDepartment.do?ids="+ ids;
 						}
 			} else {
 				alert("请选中至少一行数据");

@@ -41,7 +41,7 @@ public class DepartmentController {
 	public String addDepartment(Department dep) {
 		DepartmentDao depDao = new DepartmentDao();
 		depDao.addDepartment(dep);
-		return "redirect:department.do";
+		return "redirect:showDepartment.do";
 
 	}
 
@@ -49,7 +49,7 @@ public class DepartmentController {
 	public String delDepartment(String ids) {
 		DepartmentDao ed = new DepartmentDao();
 		ed.del(ids);
-		return "redirect:department.do";
+		return "redirect:showDepartment.do";
 	}
 	
 	@RequestMapping("updateDepartment")

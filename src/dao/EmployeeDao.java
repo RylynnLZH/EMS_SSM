@@ -213,7 +213,7 @@ public class EmployeeDao {
 			}
 			sql += " limit " + startIndex + "," + pageSize + "";
 
-			System.out.println(sql);
+			
 			ResultSet rs = stat.executeQuery(sql);
 			while (rs.next()) {
 				Employee em = new Employee();

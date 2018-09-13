@@ -61,7 +61,7 @@ $().ready(function(){
 
 	<div id="show"></div>
 	<div id="main">
-		<form action="employee?type=add" method="post" class="form-horizontal" enctype="multipart/form-data">
+		<form action="addEmployee.do" method="post" class="form-horizontal" enctype="multipart/form-data">
 		<label for="exampleInputEmail1">姓名:</label>
 		<input type="text" name="name" class="form-control" placeholder="Name"/>	<br />
 		
@@ -74,7 +74,7 @@ $().ready(function(){
 		<input type="text" name="age"class="form-control" placeholder="Age"/>	<br />
 		
 		<label for="exampleInputEmail1">部门:</label>
-		<select name="dep" class="form-control">
+		<select name="dep.id" class="form-control">
 							<option></option>
 								<c:forEach items="${deps}" var="dep">
 							<option value="${dep.id }" >${dep.name }</option>

@@ -253,7 +253,7 @@ $().ready(function(){
 	
 			if(${p.nowpage}>=${p.allpage}){
 				alert("已是最后一页！");
-			}else{ 
+			}else{  
 				window.location.href=str+${p.nowpage+1};
 				$(this).addClass("active");
 			}
